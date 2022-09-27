@@ -1,0 +1,91 @@
+/*custom variables */
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --mainBG-Verydarkblue: hsl(217, 54%, 11%);
+  --cardBG-Verydarkblue: hsl(216, 50%, 16%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--mainBG-Verydarkblue);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 18px;
+}
+/* card styles */
+.card {
+  width: 360px;
+  background-color: var(--cardBG-Verydarkblue);
+  border-radius: 1rem;
+  padding: 22px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 50px 50px,
+    rgba(0, 0, 0, 0.23) 0px 50px 50px;
+}
+.first-image {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.card h3 {
+  color: var(--White);
+  padding: 15px 0 15px;
+}
+.first-paragraph {
+  color: var(--Softblue);
+  padding: 0 0 15px;
+}
+.card ul li {
+  list-style: none;
+  display: inline-block;
+}
+.first-list {
+  float: left;
+  color: var(--Cyan);
+}
+
+.second-list {
+  position: relative;
+  left: 100px;
+  color: var(--Softblue);
+}
+svg {
+  margin-right: 10px;
+}
+hr {
+  margin-top: 20px;
+  height: 1px;
+}
+.second-image {
+  width: 15%;
+  margin-top: 20px;
+  border-color: var(--White);
+  border: 10px dotted;
+}
+.second-paragraph {
+  float: right;
+  margin-top: 30px;
+  position: relative;
+  left: -50px;
+  color: var(--Softblue);
+}
+span {
+  color: var(--White);
+}
+.first-image:hover > .card,
+h3:hover > .card,
+span:hover > .card {
+  color: var(--Cyan);
+  opacity: 1;
+}
+a {
+  text-decoration: none;
+}
